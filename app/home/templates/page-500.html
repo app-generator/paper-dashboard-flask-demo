@@ -1,33 +1,35 @@
-{% extends "layouts/base-fullscreen.html" %}
+{% extends "layouts/base.html" %}
 
-{% block title %} 403 Page {% endblock %}
+{% block title %} Error 500 {% endblock %} 
 
-{% block content %}   
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
 
-    <div class="auth-wrapper">
-        <div class="auth-content">
-            <div class="auth-bg">
-                <span class="r"></span>
-                <span class="r s"></span>
-                <span class="r s"></span>
-                <span class="r"></span>
-            </div>
-            <div class="card">
-                <div class="card-body text-center">
-                    <div class="mb-4">
-                        <i class="feather x-circle"></i>
-                    </div>
-                    <h3 class="mb-4">Error 500</h3>
+{% block content %}
 
-                    <br />
+  <div class="content">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header">
+            <h5 class="title">Error 500</h5>
 
-                    <span class="mb-0 text-muted">
-                        Server Error - <a href="/">Home</a> 
-                    </span>
-
-                </div>
-            </div>
+            <blockquote>
+                <p class="blockquote blockquote-primary">
+                    Server error - Please contact support.
+                    <br>
+                    <small>
+                    - <a href="/">Home</a>
+                    </small>
+                </p>
+            </blockquote>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 
 {% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}    

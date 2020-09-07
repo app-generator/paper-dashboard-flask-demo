@@ -1,55 +1,55 @@
-# [Flask Dashboard Boilerplate](https://appseed.us/boilerplate-code/flask-dashboard)
+# [Paper Dashboard Flask](https://www.creative-tim.com/product/paper-dashboard-flask) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/home?status=Material%20Dashboard,%20a%20free%20Material%20Bootstrap%204%20Admin%20Template%20%E2%9D%A4%EF%B8%8F%20https%3A//bit.ly/2Lyat1Y%20%23bootstrap%20%23material%20%23design%20%23developers%20%23freebie%20%20via%20%40CreativeTim)
 
-> Template [boilerplate code](https://appseed.us/boilerplate-code) used by [AppSeed](https://appseed.us) to generate simple admin dashboards coded in [Flask](https://palletsprojects.com/p/flask/) - Features:
+ ![version](https://img.shields.io/badge/version-1.0.0-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/paper-dashboard-flask.svg?maxAge=2592000)](https://github.com/creativetimofficial/paper-dashboard-flask/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/paper-dashboard-flask.svg?maxAge=2592000)](https://github.com/creativetimofficial/paper-dashboard-flask/issues?q=is%3Aissue+is%3Aclosed) [![Join the chat at https://gitter.im/NIT-dgp/General](https://badges.gitter.im/NIT-dgp/General.svg)](https://gitter.im/creative-tim-general/Lobby) [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/E4aHAQy)
 
-- UI Kit: **Datta Able Dashboard** (Lite Version) provided by **CodedThemes**
+![Paper Dashboard Flask - Admin Dashboard coded in Flask.](https://github.com/creativetimofficial/paper-dashboard-flask/blob/master/media/paper-dashboard-flask-intro.gif)
+
+<br />
+
+> Free product - **Flask Dashboard** starter project - Features:
+
+- UI Kit: **Paper Dashboard** (Free Version) provided by **[Creative-Tim](https://www.creative-tim.com/)**
+- [Codebase](https://github.com/app-generator/boilerplate-code-flask-dashboard) - provided by **[AppSeed](https://appseed.us/)**
 - SQLite, PostgreSQL, SQLAlchemy ORM
 - Alembic (DB schema migrations)
 - Modular design with **Blueprints**
 - Session-Based authentication (via **flask_login**)
 - Forms validation
 - Deployment scripts: Docker, Gunicorn / Nginx, Heroku
-- **[MIT License](https://github.com/app-generator/license-mit)**
-- Free support via **Github** issues tracker
-- Paid 24/7 Live Support via [Discord](https://discord.gg/fZC6hup).
-
-> Links
-
-- [Boierplate Code Flask Dashboard](https://boilerplate-code-flask-dashboard.appseed.us/) - LIVE Demo
-- [Boierplate Code Flask Dashboard](https://docs.appseed.us/boilerplate-code/flask-dashboard/) - Documentation
-- [Boierplate Code Flask Dashboard](https://appseed.us/boilerplate-code/flask-dashboard) - Official product page
-- More [Flask Admin Dashboards](https://appseed.us/admin-dashboards/flask) - index hosted by **[AppSeed](https://appseed.us)**
-- [Open-Source Admin Dashboards](https://appseed.us/admin-dashboards/open-source) - index hosted by **[AppSeed](https://appseed.us)**
-
-> Projects that use this starter
-
-- [Flask Corona Dark](https://appseed.us/admin-dashboards/flask-dashboard-corona-dark) - [demo](https://flask-dashboard-corona-dark.appseed.us/), [sources](https://github.com/app-generator/flask-dashboard-corona-dark)
-- [Flask DattaAble PRO](https://appseed.us/admin-dashboards/flask-dashboard-dattaable-pro) - [demo](https://flask-dashboard-dattaable-pro.appseed.us/)
-- [Flask Atlantis Dark](https://appseed.us/admin-dashboards/flask-dashboard-atlantis-dark) - [demo](https://flask-dashboard-atlantis-dark.appseed.us/login.html), [sources](https://github.com/app-generator/flask-dashboard-atlantis-dark)
 
 <br />
 
-## Want more? Go PRO!
+## Table of Contents
 
-PRO versions include **Premium UI Kits**, Lifetime updates and **24/7 LIVE Support** (via [Discord](https://discord.gg/fZC6hup))
-
-| [Flask DattaAble PRO](https://appseed.us/admin-dashboards/flask-dashboard-dattaable-pro) | [Flask Dashboard Black PRO](https://appseed.us/admin-dashboards/flask-dashboard-black-pro) | [Flask Dashboard Argon PRO](https://appseed.us/admin-dashboards/flask-dashboard-argon-pro) |
-| --- | --- | --- |
-| [![Flask DattaAble PRO](https://raw.githubusercontent.com/app-generator/flask-dashboard-dattaable-pro/master/media/flask-dashboard-dattaable-pro-screen.png)](https://appseed.us/admin-dashboards/flask-dashboard-dattaable-pro) | [![Flask Dashboard Black PRO](https://raw.githubusercontent.com/app-generator/flask-dashboard-black-pro/master/media/flask-dashboard-black-pro-screen.png)](https://appseed.us/admin-dashboards/flask-dashboard-black-pro) | [![Flask Dashboard Argon PRO](https://raw.githubusercontent.com/app-generator/flask-dashboard-argon-pro/master/media/flask-dashboard-argon-pro-screen.png)](https://appseed.us/admin-dashboards/flask-dashboard-argon-pro)
+* [Demo](#demo)
+* [Quick Start](#quick-start)
+* [Documentation](#documentation)
+* [File Structure](#file-structure)
+* [Browser Support](#browser-support)
+* [Resources](#resources)
+* [Reporting Issues](#reporting-issues)
+* [Technical Support or Questions](#technical-support-or-questions)
+* [Licensing](#licensing)
+* [Useful Links](#useful-links)
 
 <br />
+
+## Demo
+
+> To authenticate use the default credentials ***test / pass*** or create a new user on the [registration page](https://www.creative-tim.com/live/paper-dashboard-flask).
+
+- **Paper Dashboard Flask** [Login Page](https://www.creative-tim.com/live/paper-dashboard-flask)
+
 <br />
 
-![Boierplate Code Flask Dashboard - Template project provided by AppSeed.](https://raw.githubusercontent.com/app-generator/boilerplate-code-flask-dashboard/master/media/boilerplate-code-flask-dashboard-screen.png)
+## Quick start
 
-<br />
-
-## How to use it
+> UNZIP the sources or clone the private repository. After getting the code, open a terminal and navigate to the working directory, with product source code.
 
 ```bash
 $ # Get the code
-$ git clone https://github.com/app-generator/boilerplate-code-flask-dashboard.git
-$ cd boilerplate-code-flask-dashboard
+$ git clone https://github.com/creativetimofficial/paper-dashboard-flask.git
+$ cd paper-dashboard-flask
 $
 $ # Virtualenv modules installation (Unix based systems)
 $ virtualenv env
@@ -87,49 +87,13 @@ $ # Access the dashboard in browser: http://127.0.0.1:5000/
 
 <br />
 
-## Code-base structure
-
-The project is coded using blueprints, app factory pattern, dual configuration profile (development and production) and an intuitive structure presented bellow:
-
-> Simplified version
-
-```bash
-< PROJECT ROOT >
-   |
-   |-- app/                      # Implements app logic
-   |    |-- base/                # Base Blueprint - handles the authentication
-   |    |-- home/                # Home Blueprint - serve UI Kit pages
-   |    |
-   |   __init__.py               # Initialize the app
-   |
-   |-- requirements.txt          # Development modules - SQLite storage
-   |-- requirements-mysql.txt    # Production modules  - Mysql DMBS
-   |-- requirements-pqsql.txt    # Production modules  - PostgreSql DMBS
-   |
-   |-- .env                      # Inject Configuration via Environment
-   |-- config.py                 # Set up the app
-   |-- run.py                    # Start the app - WSGI gateway
-   |
-   |-- ************************************************************************
-```
+## Documentation
+The documentation for the **Paper Dashboard Flask** is hosted at our [website](https://demos.creative-tim.com/paper-dashboard-flask/docs/1.0/getting-started/getting-started-flask.html).
 
 <br />
 
-> The bootstrap flow
-
-- `run.py` loads the `.env` file
-- Initialize the app using the specified profile: *Debug* or *Production*
-  - If env.DEBUG is set to *True* the SQLite storage is used
-  - If env.DEBUG is set to *False* the specified DB driver is used (MySql, PostgreSQL)
-- Call the app factory method `create_app` defined in app/__init__.py
-- Redirect the guest users to Login page
-- Unlock the pages served by *home* blueprint for authenticated users
-
-<br />
-
-> App / Base Blueprint
-
-The *Base* blueprint handles the authentication (routes and forms) and assets management. The structure is presented below:
+## File Structure
+Within the download you'll find the following directories and files:
 
 ```bash
 < PROJECT ROOT >
@@ -169,150 +133,65 @@ The *Base* blueprint handles the authentication (routes and forms) and assets ma
 
 <br />
 
-> App / Home Blueprint
+## Browser Support
 
-The *Home* blueprint handles UI Kit pages for authenticated users. This is the private zone of the app - the structure is presented below:
+At present, we officially aim to support the last two versions of the following browsers:
 
-```bash
-< PROJECT ROOT >
-   |
-   |-- app/
-   |    |-- base/                     # Base Blueprint - handles the authentication
-   |    |-- home/                     # Home Blueprint - serve app pages (private area)
-   |         |
-   |         |-- templates/           # UI Kit Pages
-   |              |
-   |              |-- index.html      # Default page
-   |              |-- page-404.html   # Error 404 - mandatory page
-   |              |-- page-500.html   # Error 500 - mandatory page
-   |              |-- page-403.html   # Error 403 - mandatory page
-   |              |-- *.html          # All other HTML pages
-   |
-   |-- requirements.txt               # Development modules - SQLite storage
-   |-- requirements-mysql.txt         # Production modules  - Mysql DMBS
-   |-- requirements-pqsql.txt         # Production modules  - PostgreSql DMBS
-   |
-   |-- .env                           # Inject Configuration via Environment
-   |-- config.py                      # Set up the app
-   |-- run.py                         # Start the app - WSGI gateway
-   |
-   |-- ************************************************************************
-```
+<img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/chrome.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/firefox.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/edge.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/safari.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/opera.png" width="64" height="64">
 
 <br />
 
-## Deployment
+## Resources
 
-The app is provided with a basic configuration to be executed in [Docker](https://www.docker.com/), [Heroku](https://www.heroku.com/), [Gunicorn](https://gunicorn.org/), and [Waitress](https://docs.pylonsproject.org/projects/waitress/en/stable/).
-
-<br />
-
-### [Docker](https://www.docker.com/) execution
----
-
-The application can be easily executed in a docker container. The steps:
-
-> Get the code
-
-```bash
-$ git clone https://github.com/app-generator/boilerplate-code-flask-dashboard.git
-$ cd boilerplate-code-flask-dashboard
-```
-
-> Start the app in Docker
-
-```bash
-$ sudo docker-compose pull && sudo docker-compose build && sudo docker-compose up -d
-```
-
-Visit `http://localhost:5005` in your browser. The app should be up & running.
+- Demo: <https://www.creative-tim.com/live/paper-dashboard-flask>
+- Download Page: <https://www.creative-tim.com/product/paper-dashboard-flask>
+- Documentation: <https://demos.creative-tim.com/paper-dashboard-flask/docs/1.0/getting-started/getting-started-flask.html>
+- License Agreement: <https://www.creative-tim.com/license>
+- Support: <https://www.creative-tim.com/contact-us>
+- Issues: [Github Issues Page](https://github.com/creativetimofficial/paper-dashboard-flask/issues)
 
 <br />
 
-### [Heroku](https://www.heroku.com/)
----
+## Reporting Issues
 
-Steps to deploy on **Heroku**
+We use GitHub Issues as the official bug tracker for the **Paper Dashboard Flask**. Here are some advices for our users that want to report an issue:
 
-- [Create a FREE account](https://signup.heroku.com/) on Heroku platform
-- [Install the Heroku CLI](https://devcenter.heroku.com/articles/getting-started-with-python#set-up) that match your OS: Mac, Unix or Windows
-- Open a terminal window and authenticate via `heroku login` command
-- Clone the sources and push the project for LIVE deployment
-
-```bash
-$ # Clone the source code:
-$ git clone https://github.com/app-generator/boilerplate-code-flask-dashboard.git
-$ cd boilerplate-code-flask-dashboard
-$
-$ # Check Heroku CLI is installed
-$ heroku -v
-heroku/7.25.0 win32-x64 node-v12.13.0 # <-- All good
-$
-$ # Check Heroku CLI is installed
-$ heroku login
-$ # this commaond will open a browser window - click the login button (in browser)
-$
-$ # Create the Heroku project
-$ heroku create
-$
-$ # Trigger the LIVE deploy
-$ git push heroku master
-$
-$ # Open the LIVE app in browser
-$ heroku open
-```
+1. Make sure that you are using the latest version of the **Paper Dashboard Flask**. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/).
+2. Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.
+3. Some issues may be browser-specific, so specifying in what browser you encountered the issue might help.
 
 <br />
 
-### [Gunicorn](https://gunicorn.org/)
----
+## Technical Support or Questions
 
-Gunicorn 'Green Unicorn' is a Python WSGI HTTP Server for UNIX.
-
-> Install using pip
-
-```bash
-$ pip install gunicorn
-```
-> Start the app using gunicorn binary
-
-```bash
-$ gunicorn --bind 0.0.0.0:8001 run:app
-Serving on http://localhost:8001
-```
-
-Visit `http://localhost:8001` in your browser. The app should be up & running.
+If you have questions or need help integrating the product please [contact us](https://www.creative-tim.com/contact-us) instead of opening an issue.
 
 <br />
 
-### [Waitress](https://docs.pylonsproject.org/projects/waitress/en/stable/)
----
+## Licensing
 
-Waitress (Gunicorn equivalent for Windows) is meant to be a production-quality pure-Python WSGI server with very acceptable performance. It has no dependencies except ones that live in the Python standard library.
-
-> Install using pip
-
-```bash
-$ pip install waitress
-```
-> Start the app using [waitress-serve](https://docs.pylonsproject.org/projects/waitress/en/stable/runner.html)
-
-```bash
-$ waitress-serve --port=8001 run:app
-Serving on http://localhost:8001
-```
-
-Visit `http://localhost:8001` in your browser. The app should be up & running.
+- Copyright 2019 - present [Creative Tim](https://www.creative-tim.com/)
+- Licensed under [Creative Tim EULA](https://www.creative-tim.com/license)
 
 <br />
 
-## Credits & Links
+## Useful Links
 
-- [Flask Framework](https://www.palletsprojects.com/p/flask/) - The offcial website
-- [Boilerplate Code](https://appseed.us/boilerplate-code) - Index provided by **AppSeed**
-- [Boilerplate Code](https://github.com/app-generator/boilerplate-code) - Index published on Github
+- [More products](https://www.creative-tim.com/bootstrap-themes) from Creative Tim
+- [Tutorials](https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w)
+- [Freebies](https://www.creative-tim.com/bootstrap-themes/free) from Creative Tim
+- [Affiliate Program](https://www.creative-tim.com/affiliates/new) (earn money)
+
+<br />
+
+## Social Media
+
+- Twitter: <https://twitter.com/CreativeTim>
+- Facebook: <https://www.facebook.com/CreativeTim>
+- Dribbble: <https://dribbble.com/creativetim>
+- Instagram: <https://www.instagram.com/CreativeTimOfficial>
 
 <br />
 
 ---
-[Flask Dashboard Boilerplate](https://appseed.us/boilerplate-code/flask-dashboard) - Provided by **AppSeed** [Web App Generator](https://appseed.us/app-generator).
+[Paper Dashboard Flask](https://www.creative-tim.com/product/paper-dashboard-flask) - Provided by [Creative Tim](https://www.creative-tim.com/) and [AppSeed](https://appseed.us)

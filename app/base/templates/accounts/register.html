@@ -1,76 +1,83 @@
-{% extends "layouts/base-fullscreen.html" %}
+{% extends "layouts/base.html" %}
 
-{% block title %} Login {% endblock %}
+{% block title %} Register {% endblock %} 
 
-{% block content %}   
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
 
-    <div class="auth-wrapper">
-        <div class="auth-content">
-            <div class="auth-bg">
-                <span class="r"></span>
-                <span class="r s"></span>
-                <span class="r s"></span>
-                <span class="r"></span>
-            </div>
-            <div class="card">
-                <div class="card-body text-center">
-                    <div class="mb-4">
-                        <i class="feather icon-user-plus auth-icon"></i>
+{% block content %}
+
+  <div class="content">
+    <div class="row">
+
+      <div class="col-md-8">
+        <div class="card card-user">
+          <div class="card-header">
+            <h5 class="card-title">
+                Register
+            </h5>
+            <p>
+              {% if msg %}
+                  {{ msg | safe }}
+              {% else %}
+                  Add your credentials
+              {% endif %} 
+            </p>
+          </div>
+          <div class="card-body">
+
+            <!-- Hide the form on success -->
+            {% if not success %}            
+            <form role="form" method="post" action="">
+
+                {{ form.hidden_tag() }}  
+
+                <div class="row">
+                  <div class="col-md-6 pr-1">
+                    <div class="form-group">
+                      <label>Username</label>
+                      {{ form.username(placeholder="Username", class="form-control") }}
                     </div>
-                    <h3 class="mb-4">Sign up</h3>
-
-                    <span class="mb-0 text-muted">
-                        {% if msg %}
-                            {{ msg | safe }}
-                        {% else %}
-                            Add your credentials
-                        {% endif %} 
-                    </span>
-
-                    <br />
-                    <br />
-
-                    <!-- Hide the form on success -->
-                    {% if not success %}
-                        <form role="form" method="post" action="">
-
-                            {{ form.hidden_tag() }}                    
-
-                            <div class="input-group mb-3">
-                                {{ form.username(placeholder="Username", class="form-control") }}
-                            </div>
-                            
-                            <div class="input-group mb-3">
-                                {{ form.email(placeholder="Email", class="input form-control", type="email") }}
-                            </div>
-
-                            <div class="input-group mb-4">
-                                {{ form.password(placeholder="Password", class="form-control", type="password") }}
-                            </div>
-                            
-                            <div class="form-group text-left">
-                                <div class="checkbox checkbox-fill d-inline">
-                                    <input type="checkbox" name="checkbox-fill-1" id="checkbox-fill-a1" checked="">
-                                    <label for="checkbox-fill-a1" class="cr"> Agree with <a href="#">terms</a></label>
-                                </div>
-                            </div>
-                            <button type="submit" name="register" class="btn btn-primary shadow-2 mb-4">Register</button>
-
-                        </form>
-                        
-                        <p class="mb-0 text-muted">Already have an account? <a href="{{ url_for('base_blueprint.login') }}" >Login</a></p>
-                        <br />
-                    {% endif %}
-
-                    <p class="mb-2 text-muted">
-                        &copy; <a target="_blank" rel="sponsored noopener noreferrer" 
-                                  href="https://codedthemes.com/">CodedThemes</a> 
-                        - <a target="_blank" rel="noopener noreferrer"  
-                             href="https://appseed.us/boilerplate-code/flask-dashboard">Flask Boilerplate Dashboard</a>.
-                    </p>
+                  </div>
                 </div>
-            </div>
+
+                <div class="row">
+                  <div class="col-md-6 pr-1">
+                    <div class="form-group">
+                      <label>Email</label>
+                      {{ form.email(placeholder="Email", class="input form-control", type="email") }}
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6 pr-1">
+                    <div class="form-group">
+                      <label>Password</label>
+                      {{ form.password(placeholder="Password", class="form-control", type="password") }}
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6 pr-1">
+                      <div class="update">
+                          <button type="submit" name="register" class="btn btn-primary btn-round">Register</button> 
+                          &nbsp; &nbsp; Have an account? <a href="{{ url_for('base_blueprint.login') }}">Login</a>
+                      </div>
+                  </div>
+                </div>
+            </form>
+            {% endif %}
+
+          </div>
         </div>
+      </div>
+
     </div>
+  </div>
 
 {% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}  
